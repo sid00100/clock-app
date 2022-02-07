@@ -10,7 +10,7 @@ setInterval(() => {
     // hours hand set up
     const hourTime = setTime.getHours();
     console.log(hourTime);
-    const hourDeg = (hourTime/24)*360;
+    const hourDeg = (hourTime/24)*360-90;
     document.querySelector(".hour-hand").style.transform = `rotate(${hourDeg}deg)`
 
     // second hand setup
